@@ -26,7 +26,7 @@ a{color:var(--link); text-decoration-color:color-mix(in srgb, var(--link) 35%, t
 a:hover{text-decoration-color:var(--link);}
 strong, b{font-weight:600;}
 
-.page{max-width:780px; margin:0 auto; padding:0 28px;}
+.page{max-width:920px; margin:0 auto; padding:0 28px;}
 
 /* Top bar */
 .topbar{
@@ -38,7 +38,7 @@ strong, b{font-weight:600;}
   border-bottom:1px solid var(--line);
 }
 .topbar-inner{
-  max-width:780px;
+  max-width:920px;
   margin:0 auto;
   padding:20px 28px;
   display:flex;
@@ -89,6 +89,7 @@ strong, b{font-weight:600;}
   align-items:flex-start;
   padding:56px 0 8px;
   flex-wrap:wrap;
+  max-width:none;
 }
 .hero-side{width:236px; flex-shrink:0;}
 .photo-frame{
@@ -105,8 +106,7 @@ strong, b{font-weight:600;}
   display:block;
   border:3px solid var(--paper);
 }
-.hero-name{font-weight:800; font-size:1.3rem; margin:0 0 4px; letter-spacing:-0.015em;}
-.hero-role{color:var(--link); font-size:0.92rem; font-weight:600; margin:0 0 3px;}
+.hero-role{color:var(--ink); font-size:1.1rem; font-weight:700; margin:0 0 4px; letter-spacing:-0.01em;}
 .hero-affil{color:var(--slate); font-size:0.88rem; margin:0 0 20px; line-height:1.5;}
 
 .side-links{list-style:none; margin:0; padding:18px 0 0; border-top:1px solid var(--line); display:flex; flex-direction:column; gap:12px;}
@@ -127,7 +127,7 @@ strong, b{font-weight:600;}
 
 .tag-groups{display:flex; flex-direction:column; gap:12px; margin:0 0 26px;}
 .tag-group{display:flex; align-items:baseline; gap:12px; flex-wrap:wrap;}
-.tag-label{flex-shrink:0; width:64px; font-size:0.76rem; font-weight:700; letter-spacing:0.04em; text-transform:uppercase; color:var(--slate-soft);}
+.tag-label{flex-shrink:0; width:78px; font-size:0.9rem; font-weight:700; color:var(--link);}
 .tags{display:flex; flex-wrap:wrap; gap:8px;}
 .tags span{
   background:var(--link-soft);
@@ -155,7 +155,6 @@ h2{
   padding:0;
   border:none;
 }
-.lede{font-size:1.28rem; line-height:1.55; font-weight:500; margin:0 0 22px; letter-spacing:-0.005em;}
 p{margin:0 0 17px;}
 .muted{color:var(--slate-soft); font-size:0.9rem;}
 
@@ -199,7 +198,6 @@ footer .page{display:block;}
   .hero-side{width:100%;}
   .photo-frame{width:136px; height:136px; margin-bottom:14px;}
   .side-links{flex-direction:row; flex-wrap:wrap; gap:14px 20px; border-top:none; padding-top:4px;}
-  .lede{font-size:1.14rem;}
   .tag-group{flex-direction:column; gap:6px;}
   .tag-label{width:auto;}
 }
