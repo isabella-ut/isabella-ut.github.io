@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Isabella Urbano-Trujillo</title>
-<meta name="description" content="Isabella Urbano-Trujillo — PhD Candidate, Department of Social Work, NTNU. Applied microeconomics, causal inference, welfare and social protection.">
+<meta name="description" content="Isabella Urbano-Trujillo — PhD Candidate, NTNU. Applied microeconomics, causal inference, welfare and social protection.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;0,8..60,600;1,8..60,400&family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500&display=swap" rel="stylesheet">
@@ -12,29 +12,21 @@
   :root{
     --paper:#FBFAF6;
     --ink:#221F1B;
-    --slate:#635C52;
+    --slate:#6B6459;
     --pine:#274236;
-    --pine-soft:#e7ece9;
-    --line:#DEDACE;
-    --maxw: 920px;
+    --line:#E2DED2;
   }
   @media (prefers-color-scheme: dark){
     :root:not([data-theme="light"]){
-      --paper:#171815;
-      --ink:#EDE9E1;
+      --paper:#161714;
+      --ink:#ECE8E0;
       --slate:#AFA898;
-      --pine:#8FC1AA;
-      --pine-soft:#20302a;
-      --line:#37352E;
+      --pine:#93C4AD;
+      --line:#35332B;
     }
   }
   :root[data-theme="dark"]{
-    --paper:#171815;
-    --ink:#EDE9E1;
-    --slate:#AFA898;
-    --pine:#8FC1AA;
-    --pine-soft:#20302a;
-    --line:#37352E;
+    --paper:#161714; --ink:#ECE8E0; --slate:#AFA898; --pine:#93C4AD; --line:#35332B;
   }
 
   *{box-sizing:border-box;}
@@ -45,159 +37,119 @@
     color:var(--ink);
     font-family:"Source Serif 4", Georgia, "Times New Roman", serif;
     font-size:17px;
-    line-height:1.65;
+    line-height:1.66;
     -webkit-font-smoothing:antialiased;
   }
-
-  a{color:var(--pine); text-decoration-color: color-mix(in srgb, var(--pine) 45%, transparent); text-underline-offset:3px;}
-  a:hover{text-decoration-color:var(--pine);}
+  a{color:var(--ink); text-decoration-color: color-mix(in srgb, var(--slate) 55%, transparent); text-underline-offset:3px;}
+  a:hover{color:var(--pine); text-decoration-color:var(--pine);}
 
   .wrap{
-    max-width:1180px;
+    max-width:1140px;
     margin:0 auto;
     padding:0 28px;
     display:grid;
-    grid-template-columns: 300px 1fr;
-    gap:72px;
-    min-height:100vh;
+    grid-template-columns: 260px 1fr;
+    gap:80px;
   }
 
   /* Sidebar */
   aside{
-    padding:68px 0 48px;
+    padding:64px 0 40px;
     position:sticky;
     top:0;
     align-self:start;
     max-height:100vh;
     overflow:auto;
   }
+  .photo{
+    width:112px; height:112px;
+    border-radius:50%;
+    object-fit:cover;
+    margin-bottom:20px;
+    display:block;
+  }
   .name{
-    font-family:"Fraunces", "Source Serif 4", serif;
+    font-family:"Fraunces", serif;
     font-weight:600;
-    font-size:1.7rem;
-    line-height:1.25;
-    margin:0 0 4px;
+    font-size:1.55rem;
+    line-height:1.28;
+    margin:0 0 6px;
     letter-spacing:-0.01em;
   }
-  .role{
-    color:var(--slate);
-    font-size:0.98rem;
-    margin:0 0 2px;
-  }
-  .affil{
-    color:var(--slate);
-    font-size:0.98rem;
-    margin:0 0 26px;
-  }
+  .role{color:var(--slate); font-size:0.96rem; margin:0 0 2px;}
+  .affil{color:var(--slate); font-size:0.96rem; margin:0 0 26px;}
 
-  nav ul{
-    list-style:none;
-    margin:0 0 30px;
-    padding:0;
-    border-top:1px solid var(--line);
-  }
-  nav li{border-bottom:1px solid var(--line);}
+  nav ul{list-style:none; margin:0 0 26px; padding:0;}
+  nav li{margin-bottom:2px;}
   nav a{
     display:block;
-    padding:10px 2px;
-    color:var(--ink);
+    padding:4px 0;
     text-decoration:none;
-    font-size:0.98rem;
+    font-size:0.96rem;
+    color:var(--ink);
   }
   nav a:hover{color:var(--pine);}
 
-  .links{
-    list-style:none;
-    margin:0 0 20px;
-    padding:0;
-    font-size:0.92rem;
-    display:flex;
-    flex-direction:column;
-    gap:7px;
-  }
+  .divider{border:none; border-top:1px solid var(--line); margin:22px 0;}
+
+  .links{list-style:none; margin:0; padding:0; font-size:0.9rem; display:flex; flex-direction:column; gap:7px;}
   .links a{color:var(--slate); text-decoration:none;}
   .links a:hover{color:var(--pine);}
 
-  .cv-btn{
+  .cv-link{
     display:inline-block;
-    margin-top:6px;
-    padding:9px 16px;
-    border:1px solid var(--pine);
+    margin-top:20px;
+    font-size:0.9rem;
     color:var(--pine);
-    text-decoration:none;
-    font-size:0.92rem;
-    border-radius:2px;
+    text-decoration:underline;
+    text-underline-offset:3px;
   }
-  .cv-btn:hover{background:var(--pine); color:var(--paper);}
 
   /* Main */
-  main{padding:68px 0 90px;}
-  section{
-    margin-bottom:64px;
-    scroll-margin-top:32px;
-    max-width: 64ch;
-  }
-  section h2{
+  main{padding:64px 0 100px;}
+  section{margin-bottom:58px; scroll-margin-top:28px; max-width:66ch;}
+  section:first-of-type{margin-bottom:64px;}
+  h2{
     font-family:"Fraunces", serif;
     font-weight:600;
-    font-size:1.05rem;
+    font-size:1.02rem;
     color:var(--pine);
-    margin:0 0 20px;
-    padding-bottom:10px;
-    border-bottom:1px solid var(--line);
+    margin:0 0 22px;
   }
   .lede{
     font-family:"Fraunces", serif;
     font-weight:500;
-    font-size:1.5rem;
-    line-height:1.42;
-    margin:0 0 22px;
+    font-size:1.48rem;
+    line-height:1.44;
+    margin:0 0 20px;
     letter-spacing:-0.005em;
   }
-  p{margin:0 0 18px;}
+  p{margin:0 0 17px;}
   .muted{color:var(--slate);}
+  .about p:last-child{margin-bottom:0;}
 
-  .entry{margin-bottom:26px;}
-  .entry:last-child{margin-bottom:0;}
-  .entry-head{
-    display:flex;
-    justify-content:space-between;
-    gap:16px;
-    align-items:baseline;
-    margin-bottom:3px;
-  }
+  .entry{padding:18px 0; border-top:1px solid var(--line);}
+  .entry:first-child{border-top:none; padding-top:0;}
+  .entry-head{display:flex; justify-content:space-between; gap:16px; align-items:baseline; flex-wrap:wrap;}
   .entry-title{font-weight:600;}
-  .entry-org{color:var(--slate); font-style:italic;}
-  .entry-date{
-    color:var(--slate);
-    font-size:0.88rem;
-    white-space:nowrap;
-  }
-  .entry p{margin:6px 0 0; font-size:0.98rem;}
+  .entry-org{color:var(--slate); font-style:italic; font-size:0.95rem; margin-top:1px;}
+  .entry-date{color:var(--slate); font-size:0.85rem; white-space:nowrap;}
+  .entry p{margin:8px 0 0; font-size:0.97rem;}
+  .entry ul{margin:8px 0 0; padding-left:1.15em; font-size:0.97rem;}
+  .entry li{margin-bottom:4px;}
 
-  .pill-row{display:flex; flex-wrap:wrap; gap:8px 10px; margin-top:4px;}
-  .pill{
-    font-size:0.85rem;
-    color:var(--slate);
-    background:var(--pine-soft);
-    padding:3px 10px;
-    border-radius:20px;
-  }
+  .skill-row{display:grid; grid-template-columns: 130px 1fr; gap:6px 18px; font-size:0.95rem; margin-bottom:10px;}
+  .skill-row dt{color:var(--slate);}
+  .skill-row dd{margin:0;}
 
-  footer{
-    border-top:1px solid var(--line);
-    padding:22px 0 60px;
-    color:var(--slate);
-    font-size:0.85rem;
-  }
+  footer{border-top:1px solid var(--line); padding:20px 0 60px; color:var(--slate); font-size:0.84rem;}
 
   @media (max-width:860px){
     .wrap{grid-template-columns:1fr; gap:0;}
-    aside{position:static; padding:40px 0 20px; max-height:none;}
-    main{padding:10px 0 70px;}
-    nav ul{display:flex; flex-wrap:wrap; border-top:none;}
-    nav li{border-bottom:none; margin-right:16px;}
-    nav a{padding:4px 0;}
+    aside{position:static; padding:36px 0 12px; max-height:none;}
+    main{padding:8px 0 70px;}
+    nav ul{display:flex; flex-wrap:wrap; gap:2px 16px;}
+    nav li{margin-bottom:0;}
   }
 </style>
 </head>
@@ -205,6 +157,7 @@
 <div class="wrap">
 
   <aside>
+    <img class="photo" src="isabella-urbano.jpg" alt="Isabella Urbano-Trujillo">
     <p class="name">Isabella<br>Urbano-Trujillo</p>
     <p class="role">PhD Candidate</p>
     <p class="affil">Dept. of Social Work &amp; Health Science<br>NTNU, Trondheim</p>
@@ -212,6 +165,7 @@
     <nav>
       <ul>
         <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
         <li><a href="#research">Research</a></li>
         <li><a href="#experience">Experience</a></li>
         <li><a href="#teaching">Teaching</a></li>
@@ -220,49 +174,63 @@
       </ul>
     </nav>
 
+    <hr class="divider">
+
     <ul class="links">
-      <li><a href="mailto:isabellaurbanot@gmail.com">isabellaurbanot@gmail.com</a></li>
-      <li><a href="https://github.com/" target="_blank" rel="noopener">GitHub — add your username</a></li>
-      <li><a href="https://linkedin.com/" target="_blank" rel="noopener">LinkedIn — add your profile</a></li>
-      <li><a href="https://scholar.google.com/" target="_blank" rel="noopener">Google Scholar — add link</a></li>
+      <li><a href="mailto:isabellaurbanot@gmail.com">Email</a></li>
+      <li><a href="https://github.com/isabella-ut" target="_blank" rel="noopener">GitHub</a></li>
+      <li><a href="https://www.linkedin.com/in/isabella-urbano-trujillo/" target="_blank" rel="noopener">LinkedIn</a></li>
+      <li><a href="https://bsky.app/profile/isabellaut.bsky.social" target="_blank" rel="noopener">Bluesky</a></li>
+      <li><a href="https://www.ntnu.edu/employees/isabella.urbano" target="_blank" rel="noopener">NTNU profile</a></li>
+      <li><a href="https://www.ntnu.edu/isa/welgain" target="_blank" rel="noopener">WelGain project</a></li>
     </ul>
 
-    <a class="cv-btn" href="isabella-urbano-trujillo-cv.pdf" target="_blank" rel="noopener">Download CV (PDF)</a>
+    <a class="cv-link" href="isabella-urbano-trujillo-cv.pdf" target="_blank" rel="noopener">Download CV (PDF)</a>
   </aside>
 
   <main>
 
-    <section id="about">
-      <p class="lede">I study the economic sustainability of welfare reforms — and why fiscal costs so often dominate public debate while social gains stay unmeasured.</p>
-      <p>I am an incoming PhD student at the Norwegian University of Science and Technology (NTNU), where I work on the <strong>WelGain project</strong>, funded by the Research Council of Norway, under the supervision of Prof. Roberto Iacono. My research sits at the intersection of applied microeconomics, causal inference, and public policy, with a focus on welfare, inequality, and social protection.</p>
-      <p>Before starting my PhD, I worked as a junior researcher at the International Security and Development Center (ISDC) in Berlin, running impact evaluations of livelihood, gender, and agricultural interventions across Syria, Türkiye, and Sudan. I hold an MSc in Data Science for Public Policy from the Hertie School and a BSc in Economics from Pontificia Universidad Javeriana, Cali.</p>
-      <p class="muted">Stata, R (advanced) · Python, SQL (intermediate) · LaTeX, GitHub, Tableau, Power BI · Causal inference (DiD, RDD, SCM, matching) · Panel data, fixed effects, IV · Machine learning · Geospatial analysis</p>
+    <section id="about" class="about">
+      <p class="lede">I study why the fiscal costs of welfare reforms dominate public debate while their social gains stay unmeasured.</p>
+      <p>I'm a PhD candidate at the Department of Social Work and Health Science at the Norwegian University of Science and Technology (NTNU), where I work on <a href="https://www.ntnu.edu/isa/welgain" target="_blank" rel="noopener">WelGain</a>, a project funded by the Research Council of Norway, supervised by Prof. Roberto Iacono. My research is interdisciplinary, working at the intersection of applied microeconomics, causal inference, and public policy, with a focus on welfare, inequality, and social protection.</p>
+      <p>Before starting my PhD, I was a junior researcher at the International Security and Development Center (ISDC) in Berlin, where I designed and implemented experimental research and impact evaluations of livelihood, gender, and agricultural interventions in Syria, Türkiye, and Sudan. I hold an MSc in Data Science for Public Policy from the Hertie School and a BSc in Economics from Pontificia Universidad Javeriana, Cali. I'm committed to rigorous, policy-relevant research that bridges economics, statistics, and machine learning.</p>
+      <p class="muted">Trondheim, Norway · Spanish (native) · English (C1) · German (A2)</p>
+    </section>
+
+    <section id="education">
+      <h2>Education</h2>
+
+      <div class="entry">
+        <div class="entry-head">
+          <span class="entry-title">PhD, Welfare and Social Protection</span>
+          <span class="entry-date">2026 – 2029</span>
+        </div>
+        <div class="entry-org">Norwegian University of Science and Technology (NTNU), Trondheim</div>
+        <p>Doctoral researcher on the <a href="https://www.ntnu.edu/isa/welgain" target="_blank" rel="noopener">WelGain project</a>, funded by the Research Council of Norway, examining visibility bias in welfare policy evaluation — the tendency for fiscal costs to dominate public and political debate while social gains remain unmeasured. Supervisor: Prof. Roberto Iacono.</p>
+      </div>
+
+      <div class="entry">
+        <div class="entry-head">
+          <span class="entry-title">MSc, Data Science for Public Policy</span>
+          <span class="entry-date">2023 – 2025</span>
+        </div>
+        <div class="entry-org">Hertie School, Berlin</div>
+        <p>Thesis: <em>Bridging data gaps with machine learning: Food security predictions in Sudan.</em> Full tuition scholarship and DAAD stipend. Student commencement speaker, 2025.</p>
+      </div>
+
+      <div class="entry">
+        <div class="entry-head">
+          <span class="entry-title">BSc, Economics</span>
+          <span class="entry-date">2016 – 2021</span>
+        </div>
+        <div class="entry-org">Pontificia Universidad Javeriana, Cali</div>
+        <p>Graduated Cum Laude. Thesis: <em>Educational gaps and private contributions in public schools in Colombia.</em> Scholarship for best GPA, 2019. Student commencement speaker, 2021.</p>
+      </div>
     </section>
 
     <section id="research">
-      <h2>Research</h2>
-      <div class="entry">
-        <div class="entry-head">
-          <span class="entry-title">Visibility bias in welfare policy evaluation — the WelGain project</span>
-          <span class="entry-date">2026 – 2029</span>
-        </div>
-        <div class="entry-org">NTNU · Research Council of Norway · Supervisor: Prof. Roberto Iacono</div>
-        <p>My doctoral work examines the tendency for the fiscal costs of welfare reforms to dominate public and political debate while their social gains remain unmeasured. The project develops a cost–benefit framework that integrates intangible welfare gains, applies it to two Norwegian reforms using counterfactual causal inference methods, and tests experimentally whether providing citizens with evidence on hidden gains changes support for social programs.</p>
-      </div>
-      <div class="entry">
-        <div class="entry-head">
-          <span class="entry-title">Bridging data gaps with machine learning: food security predictions in Sudan</span>
-          <span class="entry-date">MSc thesis, 2025</span>
-        </div>
-        <div class="entry-org">Hertie School</div>
-      </div>
-      <div class="entry">
-        <div class="entry-head">
-          <span class="entry-title">Educational gaps and private contributions in public schools in Colombia</span>
-          <span class="entry-date">BSc thesis, 2021</span>
-        </div>
-        <div class="entry-org">Pontificia Universidad Javeriana</div>
-      </div>
+      <h2>Research interests</h2>
+      <p>Welfare and social protection · inequality · causal inference (DiD, RDD, synthetic control, matching) · panel data and fixed effects · machine learning applications in public policy · geospatial analysis · impact evaluation.</p>
     </section>
 
     <section id="experience">
@@ -274,7 +242,11 @@
           <span class="entry-date">Aug 2025 – Jul 2026</span>
         </div>
         <div class="entry-org">International Security and Development Center, Berlin</div>
-        <p>Designed and implemented experimental research; applied econometric, causal inference, and machine learning methods across impact evaluations in Syria, Türkiye, and Sudan, covering livelihood, gender, and agricultural interventions.</p>
+        <ul>
+          <li>Supported the design and implementation of experimental research; collected, cleaned, and analyzed household survey and secondary data.</li>
+          <li>Applied econometric, causal inference, and machine learning methods for impact evaluation; wrote reports and academic articles.</li>
+          <li>Impact evaluations: Building Local Resilience in Syria; Resilience and Crisis Response in Earthquake-Affected Areas in Syria and Türkiye; and Restoring Food and Nutrition Security in Sudan — assessing the effects of livelihood, gender, and agricultural interventions on food security, welfare, resilience, and women's empowerment.</li>
+        </ul>
       </div>
 
       <div class="entry">
@@ -283,7 +255,7 @@
           <span class="entry-date">Jan 2024 – Jul 2025</span>
         </div>
         <div class="entry-org">International Security and Development Center, Berlin</div>
-        <p>Literature reviews, household survey data management, and quantitative and qualitative analysis in support of report writing.</p>
+        <p>Conducted literature reviews, managed large household survey datasets, and performed quantitative and qualitative analysis to support report writing.</p>
       </div>
 
       <div class="entry">
@@ -292,7 +264,12 @@
           <span class="entry-date">Nov 2021 – Aug 2023</span>
         </div>
         <div class="entry-org">CoreWoman, Bogotá</div>
-        <p>Gender-lens finance, care-economy, and value-chain research, including a synthetic-control evaluation of a financial inclusion program for women.</p>
+        <ul>
+          <li>Finances with a Gender Lens — evaluated, using a synthetic control method, a financial-inclusion program for women.</li>
+          <li>Transforming the Care Economy through Impact Investing — documented care-economy enterprises across the Global South to mobilize capital to the sector.</li>
+          <li>Women's Participation in Value Chains in PDET Municipalities — strengthened gender equity in firms across conflict-affected territories in Colombia.</li>
+          <li>Gender-Smart Investing Capacity Building Facility — designed a gender-lens investing strategy for the Yunus Social Business Fund.</li>
+        </ul>
       </div>
 
       <div class="entry">
@@ -301,7 +278,7 @@
           <span class="entry-date">Sep 2022 – Jun 2023</span>
         </div>
         <div class="entry-org">Pontificia Universidad Javeriana, Cali</div>
-        <p>Built PlaSa Colombia, a food-systems data platform with interactive Tableau dashboards, for the Alliance of Bioversity International and CIAT.</p>
+        <p>Built the food-system platform PlaSa Colombia for the Alliance of Bioversity International and the International Center for Tropical Agriculture, centralizing public and private data and creating interactive Tableau dashboards.</p>
       </div>
 
       <div class="entry">
@@ -310,27 +287,45 @@
           <span class="entry-date">Nov 2019 – Jan 2021</span>
         </div>
         <div class="entry-org">Pontificia Universidad Javeriana, Cali</div>
-        <p>Data wrangling, quantitative analysis, and report writing, including the Feria de Cali and Petronio Álvarez Festival economic impact studies.</p>
+        <p>Supported public- and private-sector research projects through data wrangling, quantitative analysis, report writing, and data visualization. Contributed to the Feria de Cali (2019) and Petronio Álvarez Festival (2018) economic impact studies (ISBN 978-958-5137-14-1).</p>
+      </div>
+
+      <div class="entry">
+        <div class="entry-head">
+          <span class="entry-title">Procurement Assistant</span>
+          <span class="entry-date">Jun 2021 – Nov 2021</span>
+        </div>
+        <div class="entry-org">Belcorp, Tocancipá, Colombia</div>
+      </div>
+
+      <div class="entry">
+        <div class="entry-head">
+          <span class="entry-title">Logistics Intern</span>
+          <span class="entry-date">Jan 2021 – Jun 2021</span>
+        </div>
+        <div class="entry-org">AB InBev, Bogotá, Colombia</div>
       </div>
     </section>
 
     <section id="teaching">
       <h2>Teaching</h2>
+
       <div class="entry">
         <div class="entry-head">
           <span class="entry-title">Graduate Teaching Assistant</span>
           <span class="entry-date">Jan 2025 – Jul 2026</span>
         </div>
         <div class="entry-org">Hertie School, Berlin</div>
-        <p>Environmental Economics (Spring 2025, 2026) and Economics I (Fall 2025) — led weekly lab sessions, created slides, and designed and graded problem sets, tests, and assignments.</p>
+        <p>Environmental Economics (Spring 2025 and 2026) and Economics I (Fall 2025): led two weekly lab sessions over a 12-week semester; created slides and designed and graded problem sets, tests, and assignments.</p>
       </div>
+
       <div class="entry">
         <div class="entry-head">
           <span class="entry-title">Undergraduate Teaching Assistant</span>
           <span class="entry-date">Jul 2019 – Dec 2020</span>
         </div>
         <div class="entry-org">Pontificia Universidad Javeriana, Cali</div>
-        <p>Macroeconomics, microeconomics, and econometrics tutoring; Stata and R data-processing workshops; Tableau data-visualization workshops.</p>
+        <p>Tutored macroeconomics, microeconomics, and econometrics; taught data-processing workshops in Stata and R, and data-visualization workshops in Tableau.</p>
       </div>
     </section>
 
@@ -338,18 +333,28 @@
       <h2>Presentations</h2>
       <div class="entry">
         <div class="entry-head">
-          <span class="entry-title">Transit Captives: Gendered Risk of Sexual Harassment and Assault in Public Mobility Spaces — Bogotá as a Case Study</span>
+          <span class="entry-title">34th Annual IAFFE Conference</span>
           <span class="entry-date">Jul 2026</span>
         </div>
-        <div class="entry-org">34th Annual IAFFE Conference · with Sofía García-Durrer · Panel: Exploring Vulnerabilities &amp; Risk</div>
+        <div class="entry-org">International Association for Feminist Economics</div>
+        <p><em>Transit Captives: Gendered Risk of Sexual Harassment and Assault in Public Mobility Spaces — Bogotá as a Case Study</em>, with Sofía García-Durrer. Panel: Exploring Vulnerabilities &amp; Risk.</p>
       </div>
+    </section>
+
+    <section id="skills">
+      <h2>Skills &amp; languages</h2>
+      <dl class="skill-row">
+        <dt>Programming</dt><dd>Stata, R (advanced); Python, SQL (intermediate)</dd>
+        <dt>Tools</dt><dd>LaTeX, GitHub, Tableau, Power BI, Excel</dd>
+        <dt>Methods</dt><dd>Causal inference (DiD, RDD, SCM, matching), econometrics (panel data, fixed effects, IV), impact evaluation, geospatial analysis, machine learning</dd>
+        <dt>Languages</dt><dd>Spanish (native), English (C1), German (A2)</dd>
+      </dl>
     </section>
 
     <section id="contact">
       <h2>Contact</h2>
       <p>Trondheim, Norway</p>
       <p><a href="mailto:isabellaurbanot@gmail.com">isabellaurbanot@gmail.com</a></p>
-      <p class="muted">Spanish (native) · English (C1) · German (A2)</p>
     </section>
 
   </main>
