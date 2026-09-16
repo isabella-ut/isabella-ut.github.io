@@ -16,7 +16,7 @@ body{
   margin:0;
   background:var(--paper);
   color:var(--ink);
-  font-family:"Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  font-family:"Raleway", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
   font-size:16.5px;
   line-height:1.68;
   -webkit-font-smoothing:antialiased;
@@ -122,16 +122,16 @@ strong, b{font-weight:600;}
 }
 .side-links a:hover{color:var(--link); transform:translateX(2px);}
 .side-links svg{width:17px; height:17px; flex-shrink:0; fill:currentColor;}
+.side-links li.group-break{margin-top:10px;}
 
 .hero-content{flex:1; min-width:320px; padding-top:2px;}
 
-.tag-groups{display:flex; flex-direction:column; gap:12px; margin:0 0 26px;}
-.tag-group{display:flex; align-items:baseline; gap:12px; flex-wrap:wrap;}
-.tag-label{flex-shrink:0; width:78px; font-size:0.9rem; font-weight:700; color:var(--link);}
+.tag-groups{margin:0 0 30px;}
+.tag-label{display:block; font-size:0.92rem; font-weight:700; color:var(--link); margin:0 0 12px;}
 .tags{display:flex; flex-wrap:wrap; gap:8px;}
 .tags span{
   background:var(--link-soft);
-  color:var(--link);
+  color:var(--ink);
   font-size:0.8rem;
   font-weight:600;
   padding:5px 12px;
@@ -198,6 +198,4 @@ footer .page{display:block;}
   .hero-side{width:100%;}
   .photo-frame{width:136px; height:136px; margin-bottom:14px;}
   .side-links{flex-direction:row; flex-wrap:wrap; gap:14px 20px; border-top:none; padding-top:4px;}
-  .tag-group{flex-direction:column; gap:6px;}
-  .tag-label{width:auto;}
 }
