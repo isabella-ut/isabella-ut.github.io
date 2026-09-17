@@ -111,16 +111,16 @@ strong, b{font-weight:600;}
 
 .side-links{list-style:none; margin:0; padding:18px 0 0; border-top:1px solid var(--line); display:flex; flex-direction:column; gap:12px;}
 .side-links a{
-  color:var(--slate);
+  color:var(--link);
   text-decoration:none;
   font-size:0.88rem;
-  font-weight:500;
+  font-weight:600;
   transition:color .15s ease, transform .15s ease;
   display:inline-flex;
   align-items:center;
   gap:10px;
 }
-.side-links a:hover{color:var(--link); transform:translateX(2px);}
+.side-links a:hover{color:var(--ink); transform:translateX(2px);}
 .side-links svg{width:17px; height:17px; flex-shrink:0; fill:currentColor;}
 .side-links li.group-break{margin-top:10px;}
 
@@ -172,6 +172,9 @@ p{margin:0 0 17px;}
 .entry-org{color:var(--link); font-size:0.9rem; font-weight:500; margin-top:3px;}
 .entry-date{color:var(--slate-soft); font-size:0.83rem; white-space:nowrap;}
 .entry p{margin:10px 0 0; font-size:0.96rem; color:var(--slate);}
+.entry ul{margin:10px 0 0; padding-left:20px; font-size:0.96rem; color:var(--slate);}
+.entry ul li{margin-bottom:6px;}
+.entry ul li:last-child{margin-bottom:0;}
 .entry .status{font-size:0.83rem; color:var(--slate-soft); margin-top:8px;}
 
 .project-list{list-style:none; margin:0; padding:0;}
