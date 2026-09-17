@@ -188,7 +188,7 @@ p{margin:0 0 17px;}
   transition:border-color .15s ease, box-shadow .15s ease, transform .15s ease;
 }
 .project-list li:hover{border-color:color-mix(in srgb, var(--link) 35%, var(--line)); box-shadow:0 6px 18px -12px rgba(20,30,60,0.25); transform:translateY(-1px);}
-.project-list a{font-weight:700;}
+.project-list a{color:var(--ink); font-weight:700;}
 .project-list .org{color:var(--link); font-weight:500; font-style:normal;}
 
 footer{border-top:1px solid var(--line); padding:24px 0 60px; color:var(--slate-soft); font-size:0.84rem;}
