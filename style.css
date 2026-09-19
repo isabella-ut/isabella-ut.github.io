@@ -92,6 +92,7 @@ strong, b{font-weight:600;}
   max-width:none;
 }
 .hero-side{width:236px; flex-shrink:0;}
+.photo-credit{font-size:0.68rem; line-height:1.2; color:var(--slate-soft); margin:0 0 8px 6px; letter-spacing:0.02em;}
 .photo-frame{
   width:196px; height:196px;
   border-radius:50%;
