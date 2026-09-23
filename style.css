@@ -102,7 +102,7 @@ strong, b{font-weight:600;}
 }
 .photo-credit{
   position:absolute;
-  left:50%; bottom:8px;
+  left:50%; bottom:0;
   transform:translateX(-50%);
   font-size:0.66rem;
   line-height:1.2;
