@@ -102,9 +102,11 @@ strong, b{font-weight:600;}
 }
 .photo-credit{
   position:absolute;
-  right:10px; bottom:6px;
+  left:50%; bottom:8px;
+  transform:translateX(-50%);
   font-size:0.66rem;
   line-height:1.2;
+  white-space:nowrap;
   color:var(--slate-soft);
   letter-spacing:0.01em;
   background:color-mix(in srgb, var(--paper) 80%, transparent);
