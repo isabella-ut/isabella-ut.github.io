@@ -137,8 +137,6 @@ strong, b{font-weight:600;}
 }
 .side-links a:hover{color:var(--ink); transform:translateX(2px);}
 .side-links svg{width:17px; height:17px; flex-shrink:0; fill:currentColor;}
-.side-links li.group-break{margin-top:10px;}
-
 .hero-content{flex:1; min-width:320px; padding-top:2px;}
 
 .tag-groups{margin:0 0 30px;}
